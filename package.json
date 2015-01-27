@@ -1,6 +1,6 @@
 {
   "name": "passport-ntlm",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Strategy for passport module, that provides Windows SSO (NTLM) based authentication, validating password using SMB",
   "main": "./lib/passport-ntlm/",
   "scripts": {
