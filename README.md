@@ -27,7 +27,10 @@ domain controller and challenging the client browser with the key to
 receive the encrypted credentials and clear text user name, which is 
 then passed along to the domain controller. 
 
-
+For more information refer to 
+* [Microsoft SMB Protocol and CIFS Protocol Overview https://msdn.microsoft.com/en-us/library/windows/desktop/aa365233(v=vs.85).aspx]
+* [MS-CIFS https://msdn.microsoft.com/en-us/library/ee442092.aspx]
+* [MS-SMB https://msdn.microsoft.com/en-us/library/cc246231.aspx]
 
 ## Install
 
@@ -65,6 +68,7 @@ application:
       passport.authenticate('ntlm', { session: false }),
       function(req, res) {
         res.json(req.user);
+		next();
       });
 
 ## Credits
