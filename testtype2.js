@@ -7,8 +7,8 @@ var samples=[];
 var count=100;
 for (var i=1; i<= count; i++) {
 	type2.buildType2Message(challenge, {
-                    domain: "cts",
-                    domainDNS: "cts.com"
+                    domain: "YOURDOMAIN",
+                    domainDNS: "YOURDOMAIN.com"
                 });
 	samples.push(type2.buffer.toString("hex"));
 }
